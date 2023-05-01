@@ -39,7 +39,7 @@ with st.form(key='background'):
     projects = st.text_area('*Do you have any projects',
                             placeholder='Project name, Role, Duration, Description, ...')
     job = st.text_area('*Your applied job and qualifications',
-                       placeholder='Responsibility, Minimum qualifications, Preferred qualifications, ...')
+                       placeholder='Job Title, Responsibility, Minimum qualifications, Preferred qualifications, ...')
     run_button = st.form_submit_button(label='Generate')
 
     if run_button:
