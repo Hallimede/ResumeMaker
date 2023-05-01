@@ -1,5 +1,7 @@
 import openai
+
 import config
+
 
 class Resume:
 
@@ -30,7 +32,7 @@ class Resume:
                f'Experience: {self.experience} \n ' \
                f'Projects: {self.projects} \n \n ' \
                'Do not use package fontspec, use default font only. Please remember only reply me with the whole ' \
-               'well-formatted one-page long latex code. Don not reply justifications of your answer or any ' \
+               'well-formatted, strictly one-page long latex code. Don not reply justifications of your answer or any ' \
                'introduction or summary.'
 
     def run(self):

@@ -1,5 +1,7 @@
-import streamlit as st
 import base64
+
+import streamlit as st
+
 from pdfmaker import PDFMaker
 from resume import Resume
 
@@ -24,14 +26,21 @@ def download_pdf():
 
 
 with st.form(key='background'):
-    name = st.text_input('*Your name')
-    contact = st.text_area('*How to contact you')
-    education = st.text_area('*What is your education background')
-    skills = st.text_area('*Do you have any skills')
-    experience = st.text_area('*What is your work experience')
-    projects = st.text_area('*Do you have any projects')
-    job = st.text_area('*Your applied job and qualifications')
-    run_button = st.form_submit_button(label='RUN')
+    name = st.text_input('*Your name',
+                         placeholder='Name')
+    contact = st.text_area('*How to contact you',
+                           placeholder='Email, Tel, LinkedIn ...')
+    education = st.text_area('*What is your education background',
+                             placeholder='Degree, School, Major, Duration, Courses, GPA, ...')
+    skills = st.text_area('*Do you have any skills',
+                          placeholder='Programming languages, Frameworks ...')
+    experience = st.text_area('*What is your work experience',
+                              placeholder='Company, Title, Duration, Description, ...')
+    projects = st.text_area('*Do you have any projects',
+                            placeholder='Project name, Role, Duration, Description, ...')
+    job = st.text_area('*Your applied job and qualifications',
+                       placeholder='Responsibility, Minimum qualifications, Preferred qualifications, ...')
+    run_button = st.form_submit_button(label='Generate')
 
     if run_button:
         if validate_input(name, contact, education, skills, experience, projects, job):
