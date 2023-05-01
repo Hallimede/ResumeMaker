@@ -1,3 +1,5 @@
 venv/
 .idea/
 .DS_Store
+output.pdf
+__pycache__/
