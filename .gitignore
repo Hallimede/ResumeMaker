@@ -3,3 +3,4 @@ venv/
 .DS_Store
 output.pdf
 __pycache__/
+config.py

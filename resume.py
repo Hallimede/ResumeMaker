@@ -1,10 +1,10 @@
 import openai
-
+import config
 
 class Resume:
 
     def __init__(self, name, contact, education, skills, experience, projects, job):
-        self.api_key = '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'
+        self.api_key = config.GPT_API_KEY
         self.model_engine = "text-davinci-003"
         self.name = name
         self.contact = contact
