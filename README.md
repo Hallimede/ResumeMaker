@@ -37,6 +37,8 @@ Nowadays, people often use Chat-GPT to help embellish their resumes. However, th
 
 - Do not expose API keys
 
+  - Don't hardcode API keys in public repo.
+
 
 ## Example
 
@@ -73,6 +75,6 @@ $ streamlit run main.py
 
 ## Reference
 
-[^1] https://platform.openai.com/docs/api-reference/completions
+[1] https://platform.openai.com/docs/api-reference/completions
 
-[^2] https://github.com/aslushnikov/latex-online#latex-online-
+[2] https://github.com/aslushnikov/latex-online#latex-online-
