@@ -37,7 +37,7 @@ Nowadays, people often use Chat-GPT to help embellish their resumes. However, th
 
 - Do not expose API keys
 
-  - Don't hardcode API keys in public repo.
+  - Don't hardcode API keys in public repo, use environment variables instead.
 
 
 ## Example
@@ -65,6 +65,11 @@ $ source env/bin/activate
 Install the modules necessary to run this application:
 ```bash
 $ pip install -r requirements.txt
+```
+
+Config OpenAI API key for MacOS or Linux
+```bash
+export OPENAI_API_KEY=<Your OpenAI API key>
 ```
 
 Run the application and open link in browser
